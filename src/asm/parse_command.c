@@ -36,13 +36,44 @@ char 				*find_label(char *line)
 	return (label);
 }
 
+t_op 				*fill_command(char *line)
+{
+return NULL;
+}
+
+char 				*get_trimmed_command(char *line)
+{
+	char 	*res;
+	char 	*comment_pos2;
+	char 	*comment_pos1;
+	char 	*comment_start;
+
+	comment_pos1 = ft_strchr(line, COMMENT_CHAR);
+	comment_pos2 = ft_strchr(line, COMMENT_CHAR_ADD);
+	if (comment_pos1 && comment_pos2)
+		comment_start = (((comment_pos1 - comment_pos2) > 0) ? comment_pos2 : comment_pos1);
+	else if (comment_pos1)
+		comment_start = comment_pos1;
+	else if (comment_pos2)
+		comment_start = comment_pos2;
+	else
+		comment_start = NULL;
+	res = ft_strsub(line, 0, (comment_start ? comment_start - line : ft_strlen(line)));
+	return (res);
+}
+
 t_labeled_code		*parse_command(char *line)
 {
 	t_labeled_code	*parsed_command;
+	char 			*trimmed_command;
 
 	// todo return NULL if line is empty
 	parsed_command = (t_labeled_code *)malloc(sizeof(t_labeled_code));
 	parsed_command->label = find_label(line);
-	printf("line {%s} || found label {%s}\n", line, parsed_command->label);
+	printf("found label {%s}\t", parsed_command->label);
+	trimmed_command = get_trimmed_command(line + ft_strlen(parsed_command->label) + 1);
+
+	printf("line {%s}\n", trimmed_command);
+
 	return (NULL);
 }
