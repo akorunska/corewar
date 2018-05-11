@@ -13,6 +13,7 @@
 #include "array_list.h"
 #include "../libft/libft.h"
 #include "op.h"
+#include "asm_parse.h"
 #include <stdlib.h>
 #include <stdio.h> // debugging
 
@@ -36,17 +37,13 @@ char 				*find_label(char *line)
 	return (label);
 }
 
-t_op 				*fill_command(char *line)
-{
-return NULL;
-}
-
 char 				*get_trimmed_command(char *line)
 {
 	char 	*res;
 	char 	*comment_pos2;
 	char 	*comment_pos1;
 	char 	*comment_start;
+	int 	start_position;
 
 	comment_pos1 = ft_strchr(line, COMMENT_CHAR);
 	comment_pos2 = ft_strchr(line, COMMENT_CHAR_ADD);
@@ -58,7 +55,11 @@ char 				*get_trimmed_command(char *line)
 		comment_start = comment_pos2;
 	else
 		comment_start = NULL;
-	res = ft_strsub(line, 0, (comment_start ? comment_start - line : ft_strlen(line)));
+	start_position = 0;
+	while (line[start_position] == ' ' || line[start_position] == '\t')
+		start_position++;
+	printf("start is %i\n", start_position);
+	res = ft_strsub(line, start_position,(comment_start ? comment_start - line : ft_strlen(line)) - start_position);
 	return (res);
 }
 
@@ -70,10 +71,11 @@ t_labeled_code		*parse_command(char *line)
 	// todo return NULL if line is empty
 	parsed_command = (t_labeled_code *)malloc(sizeof(t_labeled_code));
 	parsed_command->label = find_label(line);
-	printf("found label {%s}\t", parsed_command->label);
-	trimmed_command = get_trimmed_command(line + ft_strlen(parsed_command->label) + 1);
-
-	printf("line {%s}\n", trimmed_command);
-
-	return (NULL);
+	trimmed_command = get_trimmed_command(line + ft_strlen(parsed_command->label));
+	parsed_command->command = (t_command *)malloc(sizeof(t_command));
+	parsed_command->command->type = get_command_type(trimmed_command);
+	printf("%s: {%i}\n", trimmed_command, parsed_command->command->type);
+	if ( parsed_command->command->type)
+		get_arguments(parsed_command->command, trimmed_command + ft_strlen(g_op_tab[parsed_command->command->type - 1].name));
+	return (parsed_command);
 }

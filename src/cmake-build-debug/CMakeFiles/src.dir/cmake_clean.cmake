@@ -69,6 +69,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/src.dir/libft/libsrc/ft_toupper.c.o"
   "CMakeFiles/src.dir/asm/parse_element.c.o"
   "CMakeFiles/src.dir/asm/parse_command.c.o"
+  "CMakeFiles/src.dir/command_from_string.c.o"
   "src.pdb"
   "src"
 )

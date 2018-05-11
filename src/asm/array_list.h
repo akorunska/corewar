@@ -15,10 +15,18 @@
 
 # include "op.h"
 
+typedef struct s_command
+{
+	char		type;
+	char		*args[3];
+	t_arg_type 	arg_types[3];
+}				t_command;
+
 typedef struct	s_labeled_code
 {
-	char	*label;
-	t_op	*op;
+	char		*label;
+	t_command	*command;
+	int			bytecode_length;
 }				t_labeled_code;
 
 typedef struct	s_array_list

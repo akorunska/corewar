@@ -15,7 +15,7 @@
 #include <stdio.h> //
 #include "asm_parse.h"
 
-#define FILE_SIZE 32
+#define FILE_SIZE 64
 
 int		main(int	argc, char **argv)
 {
@@ -31,7 +31,6 @@ int		main(int	argc, char **argv)
 		fd = open(argv[1], O_RDONLY);
 		if (fd < 0)
 			exit(1);
-		printf("fd is %i\n", fd);
 		i = 0;
 		while (get_next_line(fd, &buf) == 1)
 		{

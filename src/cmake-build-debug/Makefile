@@ -258,6 +258,33 @@ asm/parse_element.c.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/parse_element.c.s
 .PHONY : asm/parse_element.c.s
 
+command_from_string.o: command_from_string.c.o
+
+.PHONY : command_from_string.o
+
+# target to build an object file
+command_from_string.c.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.o
+.PHONY : command_from_string.c.o
+
+command_from_string.i: command_from_string.c.i
+
+.PHONY : command_from_string.i
+
+# target to preprocess a source file
+command_from_string.c.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.i
+.PHONY : command_from_string.c.i
+
+command_from_string.s: command_from_string.c.s
+
+.PHONY : command_from_string.s
+
+# target to generate assembly for a file
+command_from_string.c.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.s
+.PHONY : command_from_string.c.s
+
 libft/gnl_src/get_next_line.o: libft/gnl_src/get_next_line.c.o
 
 .PHONY : libft/gnl_src/get_next_line.o
@@ -2037,6 +2064,9 @@ help:
 	@echo "... asm/parse_element.o"
 	@echo "... asm/parse_element.i"
 	@echo "... asm/parse_element.s"
+	@echo "... command_from_string.o"
+	@echo "... command_from_string.i"
+	@echo "... command_from_string.s"
 	@echo "... libft/gnl_src/get_next_line.o"
 	@echo "... libft/gnl_src/get_next_line.i"
 	@echo "... libft/gnl_src/get_next_line.s"

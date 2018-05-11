@@ -45,7 +45,7 @@ char	*get_bytecode(char **args)
 	temp = parse_element(args, COMMENT_CMD_STRING);
 	ft_strcpy(file.header.comment, temp);
 	free(temp);
-	printf("name: {%s}\n comment: {%s}\n", file.header.prog_name, file.header.comment);
+	printf("name: {%s}\ncomment: {%s}\n", file.header.prog_name, file.header.comment);
 
 	// todo find first line where code starts
 

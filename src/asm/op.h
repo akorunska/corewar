@@ -38,6 +38,7 @@
 #define COMMENT_CHAR_ADD		';'
 #define LABEL_CHAR				':'
 #define DIRECT_CHAR				'%'
+#define REG_CHAR				'r'
 #define SEPARATOR_CHAR			','
 
 #define LABEL_CHARS				"abcdefghijklmnopqrstuvwxyz_0123456789"

@@ -30,4 +30,6 @@ char					*get_bytecode(char **args);
 char					*parse_element(char **args, char *element_type);
 t_labeled_code			*parse_command(char *line);
 
+char 					get_command_type(char *line);
+void					get_arguments(t_command *command, char *line);
 #endif

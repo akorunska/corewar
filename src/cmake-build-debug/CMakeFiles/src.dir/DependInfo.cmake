@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/akorunsk/projects/corewar/src/asm/main.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/main.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/parse_command.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/parse_command.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/parse_element.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/parse_element.c.o"
+  "/Users/akorunsk/projects/corewar/src/command_from_string.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/command_from_string.c.o"
   "/Users/akorunsk/projects/corewar/src/libft/gnl_src/get_next_line.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/libft/gnl_src/get_next_line.c.o"
   "/Users/akorunsk/projects/corewar/src/libft/libsrc/ft_atoi.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/libft/libsrc/ft_atoi.c.o"
   "/Users/akorunsk/projects/corewar/src/libft/libsrc/ft_bzero.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/libft/libsrc/ft_bzero.c.o"

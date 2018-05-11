@@ -104,6 +104,9 @@
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/parse_element.c">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/Users/akorunsk/projects/corewar/src/command_from_string.c">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/libft/gnl_src/get_next_line.c">
 			<Option target="src"/>
 		</Unit>
