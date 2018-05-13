@@ -27,6 +27,7 @@ typedef struct	s_labeled_code
 	char		*label;
 	t_command	*command;
 	int			bytecode_length;
+	char		*bytecode;
 }				t_labeled_code;
 
 typedef struct	s_array_list
@@ -35,5 +36,16 @@ typedef struct	s_array_list
 	int				capacity;
 	t_labeled_code 	**values;
 }				t_array_list;
+
+
+void			al_initialise(t_array_list *al, int initial_capacity);
+void			al_insert(t_array_list *d, t_labeled_code *lc);
+void			al_clear(t_array_list *d);
+
+t_labeled_code	*al_get_by_index(t_array_list *d, int index);
+t_labeled_code	*al_get_by_label(t_array_list *d, char *label);
+void			al_map(t_array_list *self, void f(t_labeled_code *c));
+int 			al_index_of(t_array_list *self, char *label);
+int 			al_index_of_command(t_array_list *self, t_labeled_code *c);
 
 #endif

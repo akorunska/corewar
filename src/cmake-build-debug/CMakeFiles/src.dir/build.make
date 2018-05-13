@@ -1737,28 +1737,52 @@ CMakeFiles/src.dir/asm/parse_command.c.o.provides: CMakeFiles/src.dir/asm/parse_
 CMakeFiles/src.dir/asm/parse_command.c.o.provides.build: CMakeFiles/src.dir/asm/parse_command.c.o
 
 
-CMakeFiles/src.dir/command_from_string.c.o: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/command_from_string.c.o: ../command_from_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/src.dir/command_from_string.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src.dir/command_from_string.c.o   -c /Users/akorunsk/projects/corewar/src/command_from_string.c
+CMakeFiles/src.dir/asm/command.c.o: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/asm/command.c.o: ../asm/command.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/src.dir/asm/command.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src.dir/asm/command.c.o   -c /Users/akorunsk/projects/corewar/src/asm/command.c
 
-CMakeFiles/src.dir/command_from_string.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src.dir/command_from_string.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/akorunsk/projects/corewar/src/command_from_string.c > CMakeFiles/src.dir/command_from_string.c.i
+CMakeFiles/src.dir/asm/command.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src.dir/asm/command.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/akorunsk/projects/corewar/src/asm/command.c > CMakeFiles/src.dir/asm/command.c.i
 
-CMakeFiles/src.dir/command_from_string.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src.dir/command_from_string.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/akorunsk/projects/corewar/src/command_from_string.c -o CMakeFiles/src.dir/command_from_string.c.s
+CMakeFiles/src.dir/asm/command.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src.dir/asm/command.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/akorunsk/projects/corewar/src/asm/command.c -o CMakeFiles/src.dir/asm/command.c.s
 
-CMakeFiles/src.dir/command_from_string.c.o.requires:
+CMakeFiles/src.dir/asm/command.c.o.requires:
 
-.PHONY : CMakeFiles/src.dir/command_from_string.c.o.requires
+.PHONY : CMakeFiles/src.dir/asm/command.c.o.requires
 
-CMakeFiles/src.dir/command_from_string.c.o.provides: CMakeFiles/src.dir/command_from_string.c.o.requires
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.o.provides.build
-.PHONY : CMakeFiles/src.dir/command_from_string.c.o.provides
+CMakeFiles/src.dir/asm/command.c.o.provides: CMakeFiles/src.dir/asm/command.c.o.requires
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command.c.o.provides.build
+.PHONY : CMakeFiles/src.dir/asm/command.c.o.provides
 
-CMakeFiles/src.dir/command_from_string.c.o.provides.build: CMakeFiles/src.dir/command_from_string.c.o
+CMakeFiles/src.dir/asm/command.c.o.provides.build: CMakeFiles/src.dir/asm/command.c.o
+
+
+CMakeFiles/src.dir/asm/array_list_access.c.o: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/asm/array_list_access.c.o: ../asm/array_list_access.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/src.dir/asm/array_list_access.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src.dir/asm/array_list_access.c.o   -c /Users/akorunsk/projects/corewar/src/asm/array_list_access.c
+
+CMakeFiles/src.dir/asm/array_list_access.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src.dir/asm/array_list_access.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/akorunsk/projects/corewar/src/asm/array_list_access.c > CMakeFiles/src.dir/asm/array_list_access.c.i
+
+CMakeFiles/src.dir/asm/array_list_access.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src.dir/asm/array_list_access.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/akorunsk/projects/corewar/src/asm/array_list_access.c -o CMakeFiles/src.dir/asm/array_list_access.c.s
+
+CMakeFiles/src.dir/asm/array_list_access.c.o.requires:
+
+.PHONY : CMakeFiles/src.dir/asm/array_list_access.c.o.requires
+
+CMakeFiles/src.dir/asm/array_list_access.c.o.provides: CMakeFiles/src.dir/asm/array_list_access.c.o.requires
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/array_list_access.c.o.provides.build
+.PHONY : CMakeFiles/src.dir/asm/array_list_access.c.o.provides
+
+CMakeFiles/src.dir/asm/array_list_access.c.o.provides.build: CMakeFiles/src.dir/asm/array_list_access.c.o
 
 
 # Object files for target src
@@ -1833,7 +1857,8 @@ src_OBJECTS = \
 "CMakeFiles/src.dir/libft/libsrc/ft_toupper.c.o" \
 "CMakeFiles/src.dir/asm/parse_element.c.o" \
 "CMakeFiles/src.dir/asm/parse_command.c.o" \
-"CMakeFiles/src.dir/command_from_string.c.o"
+"CMakeFiles/src.dir/asm/command.c.o" \
+"CMakeFiles/src.dir/asm/array_list_access.c.o"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
@@ -1908,10 +1933,11 @@ src: CMakeFiles/src.dir/libft/libsrc/ft_tolower.c.o
 src: CMakeFiles/src.dir/libft/libsrc/ft_toupper.c.o
 src: CMakeFiles/src.dir/asm/parse_element.c.o
 src: CMakeFiles/src.dir/asm/parse_command.c.o
-src: CMakeFiles/src.dir/command_from_string.c.o
+src: CMakeFiles/src.dir/asm/command.c.o
+src: CMakeFiles/src.dir/asm/array_list_access.c.o
 src: CMakeFiles/src.dir/build.make
 src: CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C executable src"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1989,7 +2015,8 @@ CMakeFiles/src.dir/requires: CMakeFiles/src.dir/libft/libsrc/ft_tolower.c.o.requ
 CMakeFiles/src.dir/requires: CMakeFiles/src.dir/libft/libsrc/ft_toupper.c.o.requires
 CMakeFiles/src.dir/requires: CMakeFiles/src.dir/asm/parse_element.c.o.requires
 CMakeFiles/src.dir/requires: CMakeFiles/src.dir/asm/parse_command.c.o.requires
-CMakeFiles/src.dir/requires: CMakeFiles/src.dir/command_from_string.c.o.requires
+CMakeFiles/src.dir/requires: CMakeFiles/src.dir/asm/command.c.o.requires
+CMakeFiles/src.dir/requires: CMakeFiles/src.dir/asm/array_list_access.c.o.requires
 
 .PHONY : CMakeFiles/src.dir/requires
 

@@ -46,14 +46,13 @@ static void	al_stretch(t_array_list *d)
 	d->values = bigger_copy;
 }
 
-void	al_insert(t_array_list *d, char *lbl_name, t_command *command)
+void	al_insert(t_array_list *d, t_labeled_code *lc)
 {
+	if (!lc)
+		return ;
 	if (d->size + 1 >= d->capacity)
 		al_stretch(d);
-	d->values[d->size] = (t_labeled_code *)malloc(sizeof(t_labeled_code));
-	d->values[d->size]->label = (char *)malloc(sizeof(char) * ft_strlen(lbl_name));
-	ft_strcpy(d->values[d->size]->label, lbl_name);
-	d->values[d->size]->command = command;
+	d->values[d->size] = lc;
 	d->size++;
 }
 

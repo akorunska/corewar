@@ -86,10 +86,16 @@
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/array_list.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/array_list_access.c">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/asm_parse.c">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/asm_parse.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/command.c">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/main.c">
@@ -102,9 +108,6 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/parse_element.c">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="/Users/akorunsk/projects/corewar/src/command_from_string.c">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/libft/gnl_src/get_next_line.c">

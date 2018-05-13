@@ -2,5 +2,7 @@
 
 .name "zork"
 
-live:live	   %:l3 					#comment;ijij
-l3:    zjmp%:live; one more # comment
+l3:    
+	zjmp%:live
+live:
+	live	   %:l3  #comment

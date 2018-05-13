@@ -150,6 +150,33 @@ asm/array_list.c.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/array_list.c.s
 .PHONY : asm/array_list.c.s
 
+asm/array_list_access.o: asm/array_list_access.c.o
+
+.PHONY : asm/array_list_access.o
+
+# target to build an object file
+asm/array_list_access.c.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/array_list_access.c.o
+.PHONY : asm/array_list_access.c.o
+
+asm/array_list_access.i: asm/array_list_access.c.i
+
+.PHONY : asm/array_list_access.i
+
+# target to preprocess a source file
+asm/array_list_access.c.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/array_list_access.c.i
+.PHONY : asm/array_list_access.c.i
+
+asm/array_list_access.s: asm/array_list_access.c.s
+
+.PHONY : asm/array_list_access.s
+
+# target to generate assembly for a file
+asm/array_list_access.c.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/array_list_access.c.s
+.PHONY : asm/array_list_access.c.s
+
 asm/asm_parse.o: asm/asm_parse.c.o
 
 .PHONY : asm/asm_parse.o
@@ -176,6 +203,33 @@ asm/asm_parse.s: asm/asm_parse.c.s
 asm/asm_parse.c.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/asm_parse.c.s
 .PHONY : asm/asm_parse.c.s
+
+asm/command.o: asm/command.c.o
+
+.PHONY : asm/command.o
+
+# target to build an object file
+asm/command.c.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command.c.o
+.PHONY : asm/command.c.o
+
+asm/command.i: asm/command.c.i
+
+.PHONY : asm/command.i
+
+# target to preprocess a source file
+asm/command.c.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command.c.i
+.PHONY : asm/command.c.i
+
+asm/command.s: asm/command.c.s
+
+.PHONY : asm/command.s
+
+# target to generate assembly for a file
+asm/command.c.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command.c.s
+.PHONY : asm/command.c.s
 
 asm/main.o: asm/main.c.o
 
@@ -257,33 +311,6 @@ asm/parse_element.s: asm/parse_element.c.s
 asm/parse_element.c.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/parse_element.c.s
 .PHONY : asm/parse_element.c.s
-
-command_from_string.o: command_from_string.c.o
-
-.PHONY : command_from_string.o
-
-# target to build an object file
-command_from_string.c.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.o
-.PHONY : command_from_string.c.o
-
-command_from_string.i: command_from_string.c.i
-
-.PHONY : command_from_string.i
-
-# target to preprocess a source file
-command_from_string.c.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.i
-.PHONY : command_from_string.c.i
-
-command_from_string.s: command_from_string.c.s
-
-.PHONY : command_from_string.s
-
-# target to generate assembly for a file
-command_from_string.c.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/command_from_string.c.s
-.PHONY : command_from_string.c.s
 
 libft/gnl_src/get_next_line.o: libft/gnl_src/get_next_line.c.o
 
@@ -2052,9 +2079,15 @@ help:
 	@echo "... asm/array_list.o"
 	@echo "... asm/array_list.i"
 	@echo "... asm/array_list.s"
+	@echo "... asm/array_list_access.o"
+	@echo "... asm/array_list_access.i"
+	@echo "... asm/array_list_access.s"
 	@echo "... asm/asm_parse.o"
 	@echo "... asm/asm_parse.i"
 	@echo "... asm/asm_parse.s"
+	@echo "... asm/command.o"
+	@echo "... asm/command.i"
+	@echo "... asm/command.s"
 	@echo "... asm/main.o"
 	@echo "... asm/main.i"
 	@echo "... asm/main.s"
@@ -2064,9 +2097,6 @@ help:
 	@echo "... asm/parse_element.o"
 	@echo "... asm/parse_element.i"
 	@echo "... asm/parse_element.s"
-	@echo "... command_from_string.o"
-	@echo "... command_from_string.i"
-	@echo "... command_from_string.s"
 	@echo "... libft/gnl_src/get_next_line.o"
 	@echo "... libft/gnl_src/get_next_line.i"
 	@echo "... libft/gnl_src/get_next_line.s"

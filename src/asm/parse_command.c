@@ -58,24 +58,48 @@ char 				*get_trimmed_command(char *line)
 	start_position = 0;
 	while (line[start_position] == ' ' || line[start_position] == '\t')
 		start_position++;
-	printf("start is %i\n", start_position);
 	res = ft_strsub(line, start_position,(comment_start ? comment_start - line : ft_strlen(line)) - start_position);
 	return (res);
 }
 
-t_labeled_code		*parse_command(char *line)
-{
-	t_labeled_code	*parsed_command;
-	char 			*trimmed_command;
+t_labeled_code		*parse_command(char *line) {
+	static char 			*label;
+	static char 			leftover;
+	t_labeled_code 			*parsed_command;
+	char 					*trimmed_command;
+	int 					command_start;
 
 	// todo return NULL if line is empty
 	parsed_command = (t_labeled_code *)malloc(sizeof(t_labeled_code));
-	parsed_command->label = find_label(line);
-	trimmed_command = get_trimmed_command(line + ft_strlen(parsed_command->label));
+	if (!label)
+		label = find_label(line);
+	command_start = (int)(!ft_strcmp("", label) || leftover
+					 ? 0 : ft_strlen(label) + 1);
+	trimmed_command = get_trimmed_command(line + command_start);
 	parsed_command->command = (t_command *)malloc(sizeof(t_command));
 	parsed_command->command->type = get_command_type(trimmed_command);
-	printf("%s: {%i}\n", trimmed_command, parsed_command->command->type);
-	if ( parsed_command->command->type)
+	printf("{%s}\n", trimmed_command);
+	if (parsed_command->command->type)
+	{
+		printf("{%s} {%i}\n", trimmed_command, parsed_command->command->type);
+		parsed_command->label = label;
 		get_arguments(parsed_command->command, trimmed_command + ft_strlen(g_op_tab[parsed_command->command->type - 1].name));
+		label = NULL;
+		leftover = 0;
+	}
+	else
+	{
+		printf("lbl: {%s}\n", label);
+		if (!ft_strcmp("", label))
+		{
+			free(label);
+			label = NULL;
+			leftover = 0;
+		}
+		leftover = 1;
+		free(parsed_command->command);
+		free(parsed_command);
+		parsed_command = NULL;
+	}
 	return (parsed_command);
 }
