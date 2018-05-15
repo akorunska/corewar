@@ -18,6 +18,7 @@
 typedef struct s_command
 {
 	char		type;
+	char		codage_octal;
 	char		*args[3];
 	t_arg_type 	arg_types[3];
 }				t_command;

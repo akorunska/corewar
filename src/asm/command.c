@@ -16,68 +16,6 @@
 #include "../libft/libft.h"
 #include "array_list.h"
 
-char 		get_command_type(char *line)
-{
-	int		i;
-
-	i = 16;
-	while (--i >= 0)
-	{
-		if (!ft_strncmp(line, g_op_tab[i].name, ft_strlen(g_op_tab[i].name)))
-			return ((char)(i + 1));
-	}
-	return (0);
-}
-
-void		get_arguments(t_command *command, char *line)
-{
-	char 	**tokens;
-	char 	*temp;
-	int		i;
-
-	tokens = ft_strsplit(line, SEPARATOR_CHAR);
-	i = -1;
-	while (tokens[++i])
-	{
-		temp = ft_strtrim(tokens[i]);
-		free(tokens[i]);
-		tokens[i] = temp;
-	}
-	i = -1;
-	while (tokens[++i])
-	{
-		if (tokens[i][0] == DIRECT_CHAR && tokens[i][1] == LABEL_CHAR)
-			command->arg_types[i] = T_LAB;
-		else if (tokens[i][0] == DIRECT_CHAR)
-			command->arg_types[i] = T_DIR;
-		else if (tokens[i][0] == REG_CHAR)
-			command->arg_types[i] = T_REG;
-		else
-			command->arg_types[i] = T_IND;
-		command->args[i] = tokens[i];
-	}
-	free(tokens);
-}
-
-void		count_command_bytecode_length(t_labeled_code *c)
-{
-	int 	length;
-	int 	i;
-
-	length = 1;
-	i = -1;
-	while (c->command->args[++i])
-	{
-		if (c->command->arg_types[i] == T_REG)
-			length +=1; 								// why 1, if typedefed reg_size is 4 ?
-		else if (c->command->arg_types[i] == T_IND)
-			length += IND_SIZE;
-		else if (c->command->arg_types[i] == T_DIR || c->command->arg_types[i] == T_LAB)
-			length += ((g_op_tab[c->command->type - 1].label_size == 0) ? DIR_SIZE : DIR_SIZE / 2);
-	}
-	c->bytecode_length = length;
-}
-
 int 		label_to_int(t_labeled_code *cur, char *ref, t_array_list *al)
 {
 	int 	current_index;
@@ -91,6 +29,11 @@ int 		label_to_int(t_labeled_code *cur, char *ref, t_array_list *al)
 	printf("current: %i  referenced: %i\n", current_index, referenced_index);
 	printf("refer label: %s\n", ref);
 	dir = (current_index <= referenced_index) ? 1 : -1;
+	if (dir < 0)
+	{
+		current_index--;
+		referenced_index--;
+	}
 	result = 0;
 	while (current_index != referenced_index)
 	{
@@ -111,7 +54,12 @@ void		convert_command_to_bytecode(t_labeled_code *c, t_array_list *al)
 	i = -1;
 	len = 1;
 	*res = c->command->type;
-	while (c->command->args[++i]) {
+	if (g_op_tab[c->command->type - 1].codage_octal)
+	{
+		*(res + 1) = c->command->codage_octal;
+		len++;
+	}
+	while (c->command->args[++i] != NULL) {
 		if (c->command->arg_types[i] == T_REG) {
 			*((char *) (res + len)) = (char) ft_atoi(c->command->args[i] + 1);
 			len += sizeof(char);
@@ -125,7 +73,7 @@ void		convert_command_to_bytecode(t_labeled_code *c, t_array_list *al)
 			dir_value = (c->command->arg_types[i] == T_LAB) ?
 						label_to_int(c, c->command->args[i] + 2, al) :
 						ft_atoi(c->command->args[i] + 1);
-			printf("dir value is {%i}\n", dir_value);
+			printf("dir value is {%x}\n", dir_value);
 			if (g_op_tab[c->command->type - 1].label_size == 0)
 			{
 				*((int *) (res + len)) = dir_value;

@@ -6,11 +6,27 @@ CMakeFiles/src.dir/asm/array_list.c.o: ../asm/array_list.h
 CMakeFiles/src.dir/asm/array_list.c.o: ../asm/op.h
 CMakeFiles/src.dir/asm/array_list.c.o: ../libft/libft.h
 
+CMakeFiles/src.dir/asm/array_list_access.c.o: ../asm/array_list.h
+CMakeFiles/src.dir/asm/array_list_access.c.o: ../asm/array_list_access.c
+CMakeFiles/src.dir/asm/array_list_access.c.o: ../asm/op.h
+CMakeFiles/src.dir/asm/array_list_access.c.o: ../libft/libft.h
+
 CMakeFiles/src.dir/asm/asm_parse.c.o: ../asm/array_list.h
 CMakeFiles/src.dir/asm/asm_parse.c.o: ../asm/asm_parse.c
 CMakeFiles/src.dir/asm/asm_parse.c.o: ../asm/asm_parse.h
 CMakeFiles/src.dir/asm/asm_parse.c.o: ../asm/op.h
 CMakeFiles/src.dir/asm/asm_parse.c.o: ../libft/libft.h
+
+CMakeFiles/src.dir/asm/command.c.o: ../asm/array_list.h
+CMakeFiles/src.dir/asm/command.c.o: ../asm/command.c
+CMakeFiles/src.dir/asm/command.c.o: ../asm/op.h
+CMakeFiles/src.dir/asm/command.c.o: ../libft/libft.h
+
+CMakeFiles/src.dir/asm/command_info.c.o: ../asm/array_list.h
+CMakeFiles/src.dir/asm/command_info.c.o: ../asm/asm_parse.h
+CMakeFiles/src.dir/asm/command_info.c.o: ../asm/command_info.c
+CMakeFiles/src.dir/asm/command_info.c.o: ../asm/op.h
+CMakeFiles/src.dir/asm/command_info.c.o: ../libft/libft.h
 
 CMakeFiles/src.dir/asm/main.c.o: ../asm/array_list.h
 CMakeFiles/src.dir/asm/main.c.o: ../asm/asm_parse.h
@@ -19,6 +35,7 @@ CMakeFiles/src.dir/asm/main.c.o: ../asm/op.h
 CMakeFiles/src.dir/asm/main.c.o: ../libft/libft.h
 
 CMakeFiles/src.dir/asm/parse_command.c.o: ../asm/array_list.h
+CMakeFiles/src.dir/asm/parse_command.c.o: ../asm/asm_parse.h
 CMakeFiles/src.dir/asm/parse_command.c.o: ../asm/op.h
 CMakeFiles/src.dir/asm/parse_command.c.o: ../asm/parse_command.c
 CMakeFiles/src.dir/asm/parse_command.c.o: ../libft/libft.h

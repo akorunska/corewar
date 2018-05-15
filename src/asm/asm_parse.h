@@ -33,6 +33,8 @@ t_labeled_code			*parse_command(char *line);
 char 					get_command_type(char *line);
 void					get_arguments(t_command *command, char *line);
 void					count_command_bytecode_length(t_labeled_code *c);
+void					count_command_codage_octal(t_command *c);
+
 void					convert_command_to_bytecode(t_labeled_code *c, \
 						t_array_list *al);
 #endif

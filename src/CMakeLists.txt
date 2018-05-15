@@ -77,4 +77,4 @@ add_executable(src
         libft/libsrc/ft_tolower.c
         libft/libsrc/ft_toupper.c
         libft/libsrc/libft.h
-        libft/libft.h asm/parse_element.c asm/parse_command.c asm/command.c asm/array_list_access.c)
+        libft/libft.h asm/parse_element.c asm/parse_command.c asm/command.c asm/array_list_access.c asm/command_info.c)

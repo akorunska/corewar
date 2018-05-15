@@ -18,6 +18,12 @@ stdlib.h
 op.h
 /Users/akorunsk/projects/corewar/src/asm/op.h
 
+/Users/akorunsk/projects/corewar/src/asm/array_list_access.c
+array_list.h
+/Users/akorunsk/projects/corewar/src/asm/array_list.h
+../libft/libft.h
+/Users/akorunsk/projects/corewar/src/libft/libft.h
+
 /Users/akorunsk/projects/corewar/src/asm/asm_parse.c
 asm_parse.h
 /Users/akorunsk/projects/corewar/src/asm/asm_parse.h
@@ -25,6 +31,8 @@ stdlib.h
 -
 stdio.h
 -
+array_list.h
+/Users/akorunsk/projects/corewar/src/asm/array_list.h
 
 /Users/akorunsk/projects/corewar/src/asm/asm_parse.h
 ../libft/libft.h
@@ -33,6 +41,30 @@ op.h
 /Users/akorunsk/projects/corewar/src/asm/op.h
 array_list.h
 /Users/akorunsk/projects/corewar/src/asm/array_list.h
+
+/Users/akorunsk/projects/corewar/src/asm/command.c
+printf.h
+-
+stdlib.h
+-
+op.h
+/Users/akorunsk/projects/corewar/src/asm/op.h
+../libft/libft.h
+/Users/akorunsk/projects/corewar/src/libft/libft.h
+array_list.h
+/Users/akorunsk/projects/corewar/src/asm/array_list.h
+
+/Users/akorunsk/projects/corewar/src/asm/command_info.c
+stdlib.h
+-
+op.h
+/Users/akorunsk/projects/corewar/src/asm/op.h
+../libft/libft.h
+/Users/akorunsk/projects/corewar/src/libft/libft.h
+array_list.h
+/Users/akorunsk/projects/corewar/src/asm/array_list.h
+asm_parse.h
+/Users/akorunsk/projects/corewar/src/asm/asm_parse.h
 
 /Users/akorunsk/projects/corewar/src/asm/main.c
 fcntl.h
@@ -53,6 +85,8 @@ array_list.h
 /Users/akorunsk/projects/corewar/src/libft/libft.h
 op.h
 /Users/akorunsk/projects/corewar/src/asm/op.h
+asm_parse.h
+/Users/akorunsk/projects/corewar/src/asm/asm_parse.h
 stdlib.h
 -
 stdio.h

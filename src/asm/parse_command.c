@@ -81,7 +81,7 @@ t_labeled_code		*parse_command(char *line) {
 	printf("{%s}\n", trimmed_command);
 	if (parsed_command->command->type)
 	{
-		printf("{%s} {%i}\n", trimmed_command, parsed_command->command->type);
+//		printf("{%s} {%i}\n", trimmed_command, parsed_command->command->type);
 		parsed_command->label = label;
 		get_arguments(parsed_command->command, trimmed_command + ft_strlen(g_op_tab[parsed_command->command->type - 1].name));
 		label = NULL;
@@ -89,7 +89,7 @@ t_labeled_code		*parse_command(char *line) {
 	}
 	else
 	{
-		printf("lbl: {%s}\n", label);
+//		printf("lbl: {%s}\n", label);
 		if (!ft_strcmp("", label))
 		{
 			free(label);

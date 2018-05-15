@@ -231,6 +231,33 @@ asm/command.c.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command.c.s
 .PHONY : asm/command.c.s
 
+asm/command_info.o: asm/command_info.c.o
+
+.PHONY : asm/command_info.o
+
+# target to build an object file
+asm/command_info.c.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command_info.c.o
+.PHONY : asm/command_info.c.o
+
+asm/command_info.i: asm/command_info.c.i
+
+.PHONY : asm/command_info.i
+
+# target to preprocess a source file
+asm/command_info.c.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command_info.c.i
+.PHONY : asm/command_info.c.i
+
+asm/command_info.s: asm/command_info.c.s
+
+.PHONY : asm/command_info.s
+
+# target to generate assembly for a file
+asm/command_info.c.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/asm/command_info.c.s
+.PHONY : asm/command_info.c.s
+
 asm/main.o: asm/main.c.o
 
 .PHONY : asm/main.o
@@ -2088,6 +2115,9 @@ help:
 	@echo "... asm/command.o"
 	@echo "... asm/command.i"
 	@echo "... asm/command.s"
+	@echo "... asm/command_info.o"
+	@echo "... asm/command_info.i"
+	@echo "... asm/command_info.s"
 	@echo "... asm/main.o"
 	@echo "... asm/main.i"
 	@echo "... asm/main.s"

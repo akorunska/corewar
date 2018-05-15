@@ -23,7 +23,7 @@ void	convert_to_bytecode(t_file *file) {
 		printf("bytecode len is {%i}\n", file->code.values[i]->bytecode_length);
 		for (int j = 0; j < file->code.values[i]->bytecode_length; j++)
 		{
-			printf("%.2x ", (char)file->code.values[i]->bytecode[j]);
+			printf("%.0x ", file->code.values[i]->bytecode[j]);
 		}
 		printf("\n");
 	}

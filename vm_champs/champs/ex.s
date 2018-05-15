@@ -3,6 +3,6 @@
 .name "zork"
 
 l3:    
-	zjmp%:live
+	ld %5, r1
 live:
 	live	   %:l3  #comment

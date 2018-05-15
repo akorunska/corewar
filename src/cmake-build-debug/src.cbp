@@ -98,6 +98,9 @@
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/command.c">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/command_info.c">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/Users/akorunsk/projects/corewar/src/asm/main.c">
 			<Option target="src"/>
 		</Unit>

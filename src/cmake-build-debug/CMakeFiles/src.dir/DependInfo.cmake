@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/akorunsk/projects/corewar/src/asm/array_list_access.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/array_list_access.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/asm_parse.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/asm_parse.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/command.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/command.c.o"
+  "/Users/akorunsk/projects/corewar/src/asm/command_info.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/command_info.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/main.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/main.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/parse_command.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/parse_command.c.o"
   "/Users/akorunsk/projects/corewar/src/asm/parse_element.c" "/Users/akorunsk/projects/corewar/src/cmake-build-debug/CMakeFiles/src.dir/asm/parse_element.c.o"
